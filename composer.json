@@ -1,0 +1,21 @@
+{
+    "name": "mrdwan/aero-team",
+    "description": "Manage Team Members Profiles for Aero Commerce",
+    "require": {
+        "php": "^7.2|^8.0",
+        "aerocommerce/core": "^0",
+        "aerocommerce/admin": "^0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mradwan\\AeroTeam\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mradwan\\AeroTeam\\ServiceProvider"
+            ]
+        }
+    }
+}
