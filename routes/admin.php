@@ -1,5 +1,5 @@
 <?php
 
-Route::get('team', function() {
-   return 'hello world!';
-})->name('admin.modules.team');
+use Mradwan\AeroTeam\Http\Controllers\AdminTeamController;
+
+Route::resource('team', [AdminTeamController::class])->name('aero_team.admin');
