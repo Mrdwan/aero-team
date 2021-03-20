@@ -12,7 +12,9 @@ class ServiceProvider extends ModuleServiceProvider
         AdminModule::create('team_profiles')
             ->title('Team Profiles')
             ->summary('Manage Team members Profiles')
-            ->routes(dirname(__DIR__).'/routes/admin.php')
+            ->routes(__DIR__.'/routes/admin.php')
             ->route('admin.modules.team');
+
+        $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
     }
 }
