@@ -10,7 +10,7 @@ class AdminTeamController extends Controller
 {
     public function index()
     {
-        return view('aero-team::admin.members.twig', [
+        return view('aero-team::admin.members.index', [
             'teamMembers' => TeamMember::paginate(15)
         ]);
     }
