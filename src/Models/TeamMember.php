@@ -8,12 +8,11 @@ use Aero\Common\Models\Model;
 use Aero\Common\Traits\Sluggable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Post extends Model
+class TeamMember extends Model
 {
     use HasTranslation,
         Sluggable,
-        SoftDeletes,
-        CanBeFiltered;
+        SoftDeletes;
 
     /**
      * The attributes which have dialect.

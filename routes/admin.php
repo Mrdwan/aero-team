@@ -2,4 +2,6 @@
 
 use Mradwan\AeroTeam\Http\Controllers\AdminTeamController;
 
-Route::resource('team', [AdminTeamController::class])->name('aero_team.admin');
+Route::resource('team', AdminTeamController::class, [
+    'as' => 'aero_team.admin'    
+]);
