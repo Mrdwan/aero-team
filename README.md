@@ -1,2 +1,2 @@
 # aero-team
-Manage Team Members Profiles for Aero Commerce
+PHP Package to manage Team Members Profiles for Aero Commerce platform
